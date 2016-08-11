@@ -1,0 +1,36 @@
+main {
+    height: 96vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: darkcyan;
+}
+
+footer {
+    height: 4vh;
+    background-color: #2aabd2;
+}
+
+#upPage, #downPage {
+    height: 18vh;
+}
+
+#scroller {
+    height: 60vh;
+
+    background-image: url('../images/scroll1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.photo {
+    opacity: 1;
+}
+
+.visible {
+    opacity: 0;
+}
+
