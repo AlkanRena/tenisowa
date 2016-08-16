@@ -6,6 +6,9 @@ main {
     align-items: center;
 
 
+    background-position: center;
+    background-size: cover;
+
     background-color: darkcyan;
 }
 
@@ -14,23 +17,23 @@ footer {
     background-color: #2aabd2;
 }
 
-#upPage, #downPage {
-    height: 18vh;
+#upPage, #midPage, #downPage {
+    height: 32vh;
 }
 
-#scroller {
-    height: 60vh;
+.menu:hover {
+    font-size: 5vh;
+    background-color: #0f0f0f;
+}
 
+
+.foto1 {
     background-image: url('../images/scroll1.jpg');
-    background-position: center;
-    background-size: cover;
+}
+.foto2 {
+    background-image: url('../images/scroll2.jpg');
 }
 
-.photo {
-    opacity: 1;
+.foto3 {
+    background-image: url('../images/scroll3.jpg');
 }
-
-.visible {
-    opacity: 0;
-}
-
