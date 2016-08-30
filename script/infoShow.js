@@ -20,51 +20,51 @@ appCmd.directive('upLeftDir', function () {
     }
 });
 
-appCmd.directive('up-middle', function () {
+appCmd.directive('upMiddle', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upMiddleInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/upMiddleInfo.html'
     }
 });
 
-appCmd.directive('up-right', function () {
+appCmd.directive('upRight', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upRightInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/upRightInfo.html'
     }
 });
 
-appCmd.directive('middle-left', function () {
+appCmd.directive('middleLeft', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/middleLeftInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/middleLeftInfo.html'
     }
 });
 
-appCmd.directive('middle-right', function () {
+appCmd.directive('middleRight', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upLeftInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/middleRightInfo.html'
     }
 });
 
-appCmd.directive('bottom-left', function () {
+appCmd.directive('bottomLeft', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upLeftInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/bottomLeftInfo.html'
     }
 });
 
-appCmd.directive('bottom-middle', function () {
+appCmd.directive('bottomMiddle', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upLeftInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/bottomMiddleInfo.html'
     }
 });
 
-appCmd.directive('bottom-right', function () {
+appCmd.directive('bottomRight', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upLeftInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/bottomRightInfo.html'
     }
 });

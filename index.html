@@ -12,31 +12,31 @@
     <script type="text/javascript" src="script/infoShow.js"></script>
 </head>
 <body >
-    <main class="foto1">
-    <div id="upPage" ng-controller="menuController">
-        <div id="up-left" class="menu col-xs-4" ng-hide="upLeftInfo">#lewo</div>
-        <div id="up-middle" class="menu col-xs-4">środek</div>
-        <div id="up-right" class="menu col-xs-4">#prawo</div>
-    </div>
-    <div id="midPage" ng-controller="menuController">
-        <div id="middle-left" class="menu col-xs-4">@LEWO</div>
-        <div id="middle-middle" ng-controller="menuController">
-            <up-left-dir ></up-left-dir>
-            <up-middle ng-hide="upMiddleInfo"></up-middle>
-            <up-right ng-hide="upRightInfo"></up-right>
-            <middle-left ng-hide="middleLeftInfo"></middle-left>
-            <middle-right ng-hide="middleRightInfo"></middle-right>
-            <bottom-left ng-hide="bottomLeftInfo"></bottom-left>
-            <bottom-middle ng-hide="bottomMiddleInfo"></bottom-middle>
-            <bottom-right ng-hide="bottomRightInfo"></bottom-right>
-        </div>
-        <div id="middle-right" class="menu col-xs-4">PRAWO</div>
-    </div>
-    <div id="downPage" ng-controller="menuController">
-        <div id="bottom-left" class="menu col-xs-4 down-left">#lewo</div>
-        <div id="bottom-middle" class="menu col-xs-4 down-middle">środek</div>
-        <div id="bottom-right" class="menu col-xs-4 down-right">@prawo</div>
-    </div>
+    <main class="foto1" ng-controller="menuController">
+
+        <button id="up-left" class="menu col-xs-4" ng-click="upLeftInfo = !upLeftInfo">#lewo</button>
+        <button id="up-middle" class="menu col-xs-4" ng-click="upMiddleInfo = !upMiddleInfo">środek</button>
+        <button id="up-right" class="menu col-xs-4" ng-click="upRightInfo = !upRightInfo">#prawo</button>
+
+
+        <button id="middle-left" class="menu col-xs-4"  ng-click="middleLeftInfo = !middleLeftInfo">@LEWO</button>
+
+            <up-left-dir ng-hide="upLeftInfo" class="showText"></up-left-dir>
+            <up-middle ng-hide="upMiddleInfo" class="showText"></up-middle>
+            <up-right ng-hide="upRightInfo" class="showText"></up-right>
+            <middle-left ng-hide="middleLeftInfo" class="showText"></middle-left>
+            <middle-right ng-hide="middleRightInfo" class="showText"></middle-right>
+            <bottom-left ng-hide="bottomLeftInfo" class="showText"></bottom-left>
+            <bottom-middle ng-hide="bottomMiddleInfo" class="showText"></bottom-middle>
+            <bottom-right ng-hide="bottomRightInfo" class="showText"></bottom-right>
+
+        <button id="middle-right" class="menu col-xs-4"  ng-click="middleRightInfo = !middleRightInfo">PRAWO</button>
+
+
+        <button id="bottom-left" class="menu col-xs-4 down-left" ng-click="bottomLeftInfo = !bottomLeftInfo">#lewo</button>
+        <button id="bottom-middle" class="menu col-xs-4 down-middle"  ng-click="bottomMiddleInfo = !bottomMiddleInfo"środek</button>
+        <button id="bottom-right" class="menu col-xs-4 down-right" ng-click="bottomRightInfo = !bottomRightInfo">@prawo</button>
+
     </main>
     <footer>
 
