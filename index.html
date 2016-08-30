@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en" ng-app="infoShowApp">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/scrollStyle.css">
     <!--Dodać jeszcze brakujące elementy-->
-    <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="script/lib/angular.min.js"></script>
+    <script type="text/javascript" src="script/infoShow.js"></script>
 </head>
-<body>
-    <main class="foto1" ng-controller="menuController">
-    <div id="upPage">
-        <div id="up-left" class="menu col-xs-4">#lewo</div>
+<body >
+    <main class="foto1">
+    <div id="upPage" ng-controller="menuController">
+        <div id="up-left" class="menu col-xs-4" ng-hide="upLeftInfo">#lewo</div>
         <div id="up-middle" class="menu col-xs-4">środek</div>
         <div id="up-right" class="menu col-xs-4">#prawo</div>
     </div>
-    <div id="midPage">
+    <div id="midPage" ng-controller="menuController">
         <div id="middle-left" class="menu col-xs-4">@LEWO</div>
-        <div id="middle-middle" class="col-xs-4">środek
-            <up-left></up-left>
+        <div id="middle-middle" ng-controller="menuController">
+            <up-left-dir ></up-left-dir>
             <up-middle ng-hide="upMiddleInfo"></up-middle>
             <up-right ng-hide="upRightInfo"></up-right>
             <middle-left ng-hide="middleLeftInfo"></middle-left>
@@ -31,7 +32,7 @@
         </div>
         <div id="middle-right" class="menu col-xs-4">PRAWO</div>
     </div>
-    <div id="downPage">
+    <div id="downPage" ng-controller="menuController">
         <div id="bottom-left" class="menu col-xs-4 down-left">#lewo</div>
         <div id="bottom-middle" class="menu col-xs-4 down-middle">środek</div>
         <div id="bottom-right" class="menu col-xs-4 down-right">@prawo</div>
@@ -40,10 +41,10 @@
     <footer>
 
     </footer>
-<script type="text/javascript" src="jquery/jquery-3.1.0.min.js"></script>
 
-
+<script type="text/javascript" src="script/lib/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="script/scroller.js"></script>
 <script type="text/javascript" src="script/mainMenu.js"></script>
+
 </body>
 </html>

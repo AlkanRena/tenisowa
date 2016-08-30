@@ -13,10 +13,10 @@ appCmd.controller('menuController', function menuController($scope){
 
 });
 
-appCmd.directive('up-left', function () {
+appCmd.directive('upLeftDir', function () {
     return {
-        restrict: 'E',
-        templateUrl: html/upLeftInfo.html
+        restrict: 'AE',
+        templateUrl: 'html/upLeftInfo.html'
     }
 });
 
