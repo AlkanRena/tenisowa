@@ -21,20 +21,20 @@
 
         <button id="middle-left" class="menu col-xs-4"  ng-click="middleLeftInfo = !middleLeftInfo">@LEWO</button>
 
-            <up-left-dir ng-hide="upLeftInfo" class="showText"></up-left-dir>
-            <up-middle ng-hide="upMiddleInfo" class="showText"></up-middle>
-            <up-right ng-hide="upRightInfo" class="showText"></up-right>
-            <middle-left ng-hide="middleLeftInfo" class="showText"></middle-left>
-            <middle-right ng-hide="middleRightInfo" class="showText"></middle-right>
-            <bottom-left ng-hide="bottomLeftInfo" class="showText"></bottom-left>
-            <bottom-middle ng-hide="bottomMiddleInfo" class="showText"></bottom-middle>
-            <bottom-right ng-hide="bottomRightInfo" class="showText"></bottom-right>
+            <up-left-dir ng-hide="upLeftInfo" class="showText" ng-click="upLeftInfo = !upLeftInfo"></up-left-dir>
+            <up-middle ng-hide="upMiddleInfo" class="showText" ng-click="upMiddleInfo = !upMiddleInfo"></up-middle>
+            <up-right ng-hide="upRightInfo" class="showText" ng-click="upRightInfo = !upRightInfo"></up-right>
+            <middle-left ng-hide="middleLeftInfo" class="showText" ng-click="middleLeftInfo = !middleLeftInfo"></middle-left>
+            <middle-right ng-hide="middleRightInfo" class="showText" ng-click="middleRightInfo = !middleRightInfo"></middle-right>
+            <bottom-left ng-hide="bottomLeftInfo" class="showText" ng-click="bottomLeftInfo = !bottomLeftInfo"></bottom-left>
+            <bottom-middle ng-hide="bottomMiddleInfo" class="showText" ng-click="bottomMiddleInfo = !bottomMiddleInfo"></bottom-middle>
+            <bottom-right ng-hide="bottomRightInfo" class="showText" ng-click="bottomRightInfo = !bottomRightInfo"></bottom-right>
 
         <button id="middle-right" class="menu col-xs-4"  ng-click="middleRightInfo = !middleRightInfo">PRAWO</button>
 
 
         <button id="bottom-left" class="menu col-xs-4 down-left" ng-click="bottomLeftInfo = !bottomLeftInfo">#lewo</button>
-        <button id="bottom-middle" class="menu col-xs-4 down-middle"  ng-click="bottomMiddleInfo = !bottomMiddleInfo"środek</button>
+        <button id="bottom-middle" class="menu col-xs-4 down-middle" ng-click="bottomMiddleInfo = !bottomMiddleInfo"środek </button>
         <button id="bottom-right" class="menu col-xs-4 down-right" ng-click="bottomRightInfo = !bottomRightInfo">@prawo</button>
 
     </main>
