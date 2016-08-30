@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="infoShowApp">
 <head>
     <meta charset="UTF-8">
     <title>Restauracja Tenisowa - wersja próbna strony</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/scrollStyle.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css.map">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <!--Dodać jeszcze brakujące elementy-->
+    <script type="text/javascript" src="angular/angular.min.js"></script>
 </head>
 <body>
-    <main>
+    <main class="foto1" ng-controller="menuController">
     <div id="upPage">
-        <div class="col-xs-3">a</div>
-        <div class="col-xs-3">a</div>
-        <div class="col-xs-3">a</div>
-        <div class="col-xs-3">a</div>
+        <div id="up-left" class="menu col-xs-4">#lewo</div>
+        <div id="up-middle" class="menu col-xs-4">środek</div>
+        <div id="up-right" class="menu col-xs-4">#prawo</div>
     </div>
-    <div id="scroller">
-    <div id="scroll1" class="photo"></div>
-    <div id="scroll2" class="photo"></div>
-    <div id="scroll3" class="photo"></div>
+    <div id="midPage">
+        <div id="middle-left" class="menu col-xs-4">@LEWO</div>
+        <div id="middle-middle" class="col-xs-4">środek
+            <up-left></up-left>
+            <up-middle ng-hide="upMiddleInfo"></up-middle>
+            <up-right ng-hide="upRightInfo"></up-right>
+            <middle-left ng-hide="middleLeftInfo"></middle-left>
+            <middle-right ng-hide="middleRightInfo"></middle-right>
+            <bottom-left ng-hide="bottomLeftInfo"></bottom-left>
+            <bottom-middle ng-hide="bottomMiddleInfo"></bottom-middle>
+            <bottom-right ng-hide="bottomRightInfo"></bottom-right>
+        </div>
+        <div id="middle-right" class="menu col-xs-4">PRAWO</div>
     </div>
     <div id="downPage">
-        <div class="col-xs-3">a</div>
-        <div class="col-xs-3">a</div>
-        <div class="col-xs-3">a</div>
-        <div class="col-xs-3">a</div>
+        <div id="bottom-left" class="menu col-xs-4 down-left">#lewo</div>
+        <div id="bottom-middle" class="menu col-xs-4 down-middle">środek</div>
+        <div id="bottom-right" class="menu col-xs-4 down-right">@prawo</div>
     </div>
     </main>
     <footer>
 
     </footer>
 <script type="text/javascript" src="jquery/jquery-3.1.0.min.js"></script>
+
 
 <script type="text/javascript" src="script/scroller.js"></script>
 <script type="text/javascript" src="script/mainMenu.js"></script>

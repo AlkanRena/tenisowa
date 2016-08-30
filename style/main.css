@@ -1,10 +1,12 @@
 main {
-    height: 96vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    height: 100vh;
+
+    background-position: center;
+    background-size: cover;
 
     background-color: darkcyan;
 }
@@ -14,23 +16,97 @@ footer {
     background-color: #2aabd2;
 }
 
-#upPage, #downPage {
-    height: 18vh;
+#upPage, #midPage, #downPage {
+    height: 32vh;
+    background-color: red;
 }
 
-#scroller {
-    height: 60vh;
+.menu:hover {
+    font-size: 5vh;
+    background-color: #0f0f0f;
+}
 
+
+.foto1 {
     background-image: url('../images/scroll1.jpg');
-    background-position: center;
-    background-size: cover;
+}
+.foto2 {
+    background-image: url('../images/scroll2.jpg');
 }
 
-.photo {
-    opacity: 1;
+.foto3 {
+    background-image: url('../images/scroll3.jpg');
 }
 
-.visible {
-    opacity: 0;
+#up-left {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    top: 0;
+    left: 0;
 }
 
+#up-middle {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    top: 0;
+    left: 47.5vw;
+}
+
+#up-right {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    top: 0;
+    right: 0;
+}
+
+#middle-left {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    top: 47.5vh;
+    left: 0;
+}
+
+#middle-middle {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+
+    height: 80vh;
+    width: 80vw;
+}
+
+#middle-right {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    top: 47.5vh;
+    right: 0;
+}
+
+#bottom-left {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    bottom: 0;
+    left: 0;
+}
+
+#bottom-middle {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    bottom: 0;
+    left: 47.5vw;
+}
+
+#bottom-right {
+    position: fixed;
+    height: 5vh;
+    width: 5vw;
+    bottom: 0;
+    right: 0;
+}
