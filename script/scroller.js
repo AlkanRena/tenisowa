@@ -1,17 +1,20 @@
 'use strict';
-
-var $slides = $('.photo');
-
-        setInterval(function(){
-                slideShow();
-            },2000);
-    
-
-    function slideShow(){
-        $slides.filter('.visible').removeClass('.visible').next().addClass('visible');
-        if ($slides.filter('.visible').lenght === 0 ) {
-            $slides.first().addClass('visible')
-        }
+$(document).ready(
+      setInterval(
+    function () {
+        if ($('main').hasClass('foto1')) {
+            $('main').removeClass('foto1').addClass('foto2')
     }
+        else if ($('main').hasClass('foto2')) {
+            $('main').removeClass('foto2').addClass('foto3')
+        }
+        else if ($('main').hasClass('foto3')) {
+            $('main').removeClass('foto3').addClass('foto1')
+        }
+          },10000
+      )
+
+);
+
 
 

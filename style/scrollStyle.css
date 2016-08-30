@@ -18,3 +18,11 @@
     background-position: center;
     background-size: cover;
 }
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
